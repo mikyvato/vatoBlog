@@ -26,87 +26,27 @@
 						   src="<?php echo Yii::app()->theme->baseUrl; ?>/img/iconodau.png">
 						</a>
 					</div>
-					<div class="span1">
-						<a class="brand" align="left" href="#"><?php //echo CHtml::encode(Yii::app()->name);?></a>
+					<div class="span3">
+						<a class="brand" align="left" href="#"><?php echo CHtml::encode(Yii::app()->name);?></a>
 					</div>
 				   	<?php 
-					   	$home=true;
-						$usuarios=false;
-						$admin2=false;
-						$expedientes=false;
-						$departamentos=false;
-						$tramitaciones=false;
-						$oficinas=false;
-						$deplocalidad=false;
-						$localidad=false;
-						$expadmin=false;
-						$tramitesadmin=false;
-						$nuevo=false;
-					
-
-					if (yii::app()->user->checkAccess('admin')){
-						$home=false;
-						$usuarios=true;
-						$expedientes=true;
-						$departamentos=true;
-						$estados=true;
-						$tramitaciones=true;
-						$oficinas=true;
-						$deplocalidad=true;
-						$localidad=true;
-					}
-					if (yii::app()->user->checkAccess('op1')){
-						$nuevo=true;
-						$admin2=true;
-						$tramitesadmin=true;
-						$home=false;
-						
-					}
-					if (yii::app()->user->checkAccess('director')){
-						$tramitesadmin=true;
-						$expadmin=true;
-						$home=false;
-					
-					}
-					if (yii::app()->user->checkAccess('op2')){
-						$tramitesadmin=true;
-						$home=false;
-					}
+					   	
 		   			$this->widget('zii.widgets.CMenu',array(
 				  		'htmlOptions'=>array('class'=>'nav pull-right'),
 				  		'encodeLabel'=>false,
 				  		'items'=>array(
-							  		array('label'=>'<div class="row">&nbsp</div><i class="icon-home icon-white">&nbsp</i> Home',
-							  			  'url'=>array('/site/index'),'visible'=>$home),
-							  		array('label'=>'<div class="row">&nbsp</div><i class="icon-pencil icon-white">&nbsp</i> Nuevo',
-									      'url'=>array('/expedientes/create'),'visible'=>$nuevo),
-							  		array('label'=>'<div class="row">&nbsp</div><i class="icon-folder-open icon-white">&nbsp</i> Expedientes',
-									      'url'=>array('/expedientes/admin2'),'visible'=>$admin2),
-							  		array('label'=>'<div class="row">&nbsp</div><i class="icon-folder-open icon-white">&nbsp</i> Expedientes',
-									      'url'=>array('/expedientes/admin'),'visible'=>$expadmin),
-							  		array('label'=>'<div class="row">&nbsp</div><i class="icon-share-alt icon-white">&nbsp</i> Tramitaciones',
-									      'url'=>array('/tramitaciones/admin'),'visible'=>$tramitesadmin),
-									array('label'=>'<div class="row">&nbsp</div>Departamentos',
-										  'url'=>array('/departamentos/index'),'visible'=>$departamentos),
-									array('label'=>'<div class="row">&nbsp</div>Oficinas', 
-										  'url'=>array('/oficinas/index',),'visible'=>$oficinas),
-									array('label'=>'<div class="row">&nbsp</div>Usuarios',
-									      'url'=>array('/usuarios/index'),'visible'=>$usuarios),
-									array('label'=>'<div class="row">&nbsp</div><i class="icon-folder-open icon-white">&nbsp</i> Expedientes',
-									      'url'=>array('/expedientes/index'),'visible'=>$expedientes),
-									array('label'=>'<div class="row">&nbsp</div><i class="icon-share-alt icon-white">&nbsp</i> Tramitaciones',
-									      'url'=>array('/tramitaciones/index'),'visible'=>$tramitaciones),
-									array('label'=>'<div class="row">&nbsp</div>Oficinas',
-									      'url'=>array('/oficinas/index'),'visible'=>$oficinas),
-									array('label'=>'<div class="row">&nbsp</div>Dep_localidades',
-									      'url'=>array('/depLocalidad/index'),'visible'=>$deplocalidad),
-									array('label'=>'<div class="row">&nbsp</div>Localidades',
-									      'url'=>array('/localidades/index'),'visible'=>$localidad),
-									array('label'=>'<div class="row">&nbsp</div><i class="icon-user icon-white"></i> Login',
-									      'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest),
-									array('label'=>'<div class="row">&nbsp</div><i class="icon-off icon-white"></i> Logout ('.Yii::app()->user->name.')',
-									      'url'=>array('/site/logout'), 'visible'=>!Yii::app()->user->isGuest)
-									),)); 
+				  			array('label'=>'<div class="row">&nbsp</div><i class="icon-home icon-white">&nbsp</i> Home',
+				  				'url'=>array('/site/index')),
+							array('label'=>'<div class="row">&nbsp</div><i class="icon-pencil icon-white">&nbsp</i> Secciones',
+								'url'=>array('/seccion')),
+							array('label'=>'<div class="row">&nbsp</div><i class="icon-folder-open icon-white">&nbsp</i> Expedientes',
+								'url'=>array('/expedientes/admin2')),
+							  		
+							array('label'=>'<div class="row">&nbsp</div><i class="icon-user icon-white"></i> Login',
+								'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest),
+							array('label'=>'<div class="row">&nbsp</div><i class="icon-off icon-white"></i> Logout ('.Yii::app()->user->name.')',
+								'url'=>array('/site/logout'), 'visible'=>!Yii::app()->user->isGuest)
+								),)); 
 					?>
 			    </div>
 			    <div class="row-fluid" style="background-color:#CC0000;height:8px">.</div>

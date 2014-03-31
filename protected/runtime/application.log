@@ -1,0 +1,117 @@
+2014/03/31 00:33:35 [error] [php] Undefined variable: home (/var/www/vatoBlog/themes/bootstrap/views/layouts/main.php:39)
+Stack trace:
+#0 /var/www/yii/framework/web/widgets/CContentDecorator.php(76): SiteController->renderFile()
+#1 /var/www/yii/framework/web/widgets/CContentDecorator.php(54): CContentDecorator->decorate()
+#2 /var/www/yii/framework/web/widgets/COutputProcessor.php(44): CContentDecorator->processOutput()
+#3 /var/www/yii/framework/web/CBaseController.php(206): CContentDecorator->run()
+#4 /var/www/yii/framework/web/CBaseController.php(300): SiteController->endWidget()
+#5 /var/www/vatoBlog/protected/views/layouts/column1.php(6): SiteController->endContent()
+#6 /var/www/yii/framework/web/CBaseController.php(126): require()
+#7 /var/www/yii/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#8 /var/www/yii/framework/web/CController.php(784): SiteController->renderFile()
+#9 /var/www/vatoBlog/protected/controllers/SiteController.php(32): SiteController->render()
+#10 /var/www/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#11 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#12 /var/www/yii/framework/web/CController.php(286): SiteController->runAction()
+#13 /var/www/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#14 /var/www/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#15 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#16 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#17 /var/www/vatoBlog/index.php(13): CWebApplication->run()
+REQUEST_URI=/vatoBlog/index.php?r=
+in /var/www/vatoBlog/themes/bootstrap/views/layouts/main.php (39)
+in /var/www/vatoBlog/protected/views/layouts/column1.php (6)
+in /var/www/vatoBlog/protected/controllers/SiteController.php (32)
+2014/03/31 00:35:40 [error] [php] Undefined variable: nuevo (/var/www/vatoBlog/themes/bootstrap/views/layouts/main.php:41)
+Stack trace:
+#0 /var/www/yii/framework/web/widgets/CContentDecorator.php(76): SiteController->renderFile()
+#1 /var/www/yii/framework/web/widgets/CContentDecorator.php(54): CContentDecorator->decorate()
+#2 /var/www/yii/framework/web/widgets/COutputProcessor.php(44): CContentDecorator->processOutput()
+#3 /var/www/yii/framework/web/CBaseController.php(206): CContentDecorator->run()
+#4 /var/www/yii/framework/web/CBaseController.php(300): SiteController->endWidget()
+#5 /var/www/vatoBlog/protected/views/layouts/column1.php(6): SiteController->endContent()
+#6 /var/www/yii/framework/web/CBaseController.php(126): require()
+#7 /var/www/yii/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#8 /var/www/yii/framework/web/CController.php(784): SiteController->renderFile()
+#9 /var/www/vatoBlog/protected/controllers/SiteController.php(32): SiteController->render()
+#10 /var/www/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#11 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#12 /var/www/yii/framework/web/CController.php(286): SiteController->runAction()
+#13 /var/www/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#14 /var/www/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#15 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#16 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#17 /var/www/vatoBlog/index.php(13): CWebApplication->run()
+REQUEST_URI=/vatoBlog/index.php?r=
+in /var/www/vatoBlog/themes/bootstrap/views/layouts/main.php (41)
+in /var/www/vatoBlog/protected/views/layouts/column1.php (6)
+in /var/www/vatoBlog/protected/controllers/SiteController.php (32)
+2014/03/31 00:35:41 [error] [php] Undefined variable: nuevo (/var/www/vatoBlog/themes/bootstrap/views/layouts/main.php:41)
+Stack trace:
+#0 /var/www/yii/framework/web/widgets/CContentDecorator.php(76): SiteController->renderFile()
+#1 /var/www/yii/framework/web/widgets/CContentDecorator.php(54): CContentDecorator->decorate()
+#2 /var/www/yii/framework/web/widgets/COutputProcessor.php(44): CContentDecorator->processOutput()
+#3 /var/www/yii/framework/web/CBaseController.php(206): CContentDecorator->run()
+#4 /var/www/yii/framework/web/CBaseController.php(300): SiteController->endWidget()
+#5 /var/www/vatoBlog/protected/views/layouts/column1.php(6): SiteController->endContent()
+#6 /var/www/yii/framework/web/CBaseController.php(126): require()
+#7 /var/www/yii/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#8 /var/www/yii/framework/web/CController.php(784): SiteController->renderFile()
+#9 /var/www/vatoBlog/protected/controllers/SiteController.php(32): SiteController->render()
+#10 /var/www/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#11 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#12 /var/www/yii/framework/web/CController.php(286): SiteController->runAction()
+#13 /var/www/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#14 /var/www/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#15 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#16 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#17 /var/www/vatoBlog/index.php(13): CWebApplication->run()
+REQUEST_URI=/vatoBlog/index.php?r=
+in /var/www/vatoBlog/themes/bootstrap/views/layouts/main.php (41)
+in /var/www/vatoBlog/protected/views/layouts/column1.php (6)
+in /var/www/vatoBlog/protected/controllers/SiteController.php (32)
+2014/03/31 00:37:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "secciones".' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('secciones')
+#1 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/vatoBlog/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/vatoBlog/index.php?r=secciones
+HTTP_REFERER=http://localhost/vatoBlog/index.php?r=site/index
+---
+2014/03/31 00:38:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "secciones".' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('secciones')
+#1 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/vatoBlog/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/vatoBlog/index.php?r=secciones
+HTTP_REFERER=http://localhost/vatoBlog/index.php?r=site/index
+---
+2014/03/31 00:38:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "secciones".' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('secciones')
+#1 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/vatoBlog/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/vatoBlog/index.php?r=secciones
+HTTP_REFERER=http://localhost/vatoBlog/index.php?r=site/index
+---
+2014/03/31 00:38:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "secciones".' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('secciones')
+#1 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/vatoBlog/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/vatoBlog/index.php?r=secciones
+HTTP_REFERER=http://localhost/vatoBlog/index.php?r=secciones
+---
+2014/03/31 00:38:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "secciones".' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('secciones')
+#1 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/vatoBlog/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/vatoBlog/index.php?r=secciones
+HTTP_REFERER=http://localhost/vatoBlog/index.php?r=secciones
+---
